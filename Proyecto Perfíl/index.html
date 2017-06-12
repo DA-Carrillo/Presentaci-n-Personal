@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Perfíl</title>
+
+	<!-- bootstrap-css -->
+	<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+	<!--// bootstrap-css -->
+	<!-- css -->
+	<link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+	<!--// css -->
+	<!-- font-awesome icons -->
+	<link href="css/font-awesome.css" rel="stylesheet"> 
+	<!-- //font-awesome icons -->
+
+	<script src="js/jquery-1.11.1.min.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<script type="text/javascript">
+		jQuery(document).ready(function($) {
+			$(".scroll").click(function(event){		
+				event.preventDefault();
+				$('html,body').animate({scrollTop:$(this.hash).offset().top},10);
+			});
+		});
+	</script>
+</head>
+<body>
+	<!--AQUÍ INICIA EN NAVBAR DE LA PÁGINA-->
+
+	<div class="banner">
+		<div class="header">
+			<div class="container">
+				<div class="header-left">
+					<div class="w3layouts-logo">
+						<h1>
+							<a href="index.html"><span style="font-size: 28px;">David Carrillo</span></a>
+						</h1>
+					</div>
+				</div>
+				<div class="header-right">
+					<div class="w3-header-top">
+						<ul>
+							<li><i class="fa fa-phone" aria-hidden="true"></i> : 4505331</li>
+							<li><i class="fa fa-envelope" aria-hidden="true"></i> : <a>dcarrilloc@institutobenitojuarez.edu.ec</a></li>
+						</ul>
+					</p>
+				</div>
+				<div class="w3-header-bottom">
+					<div class="top-nav">
+						<nav class="navbar navbar-default">
+							<!-- Collect the nav links, forms, and other content for toggling -->
+							<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+								<ul class="nav navbar-nav">
+									<li><a class="active" href="#welcome">Información Personal</a></li>
+									<li><a href="#instruccion">Instruccion Académica</a></li>
+									<li><a href="#services">Habilidades</a></li>
+
+								</ul>	
+							</div>	
+						</nav>		
+					</div>					
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--AQUÍ INICIA LA GALERÍA DE INFORMACIÓN-->
+	<div class="w3layouts-banner-slider">
+		<div class="container">
+			<div class="slider">
+				<div class="callbacks_container">
+					<ul class="rslides callbacks callbacks1" id="slider4">
+						<li>
+							<div class="agileits-banner-info">
+								<h6>Información</h6>
+								<h3>Desarrollador de Software!</h3>
+								<p>Joven Desarrollador que maneja distintos lenguajes de programación, con inmensas habilidades y conocimientos sobre la Informática.</p>
+							</div>
+						</li>
+						<li>
+							<div class="agileits-banner-info">
+								<h6>Apasionado Por</h6>
+								<h3>Los Deportes</h3>
+								<p>Además de autoeduacarse cada día, otro aspecto importante de su vida son los deportes y el acondicionamiento físico.
+									Su deporte favorito es el Fútbol el cual practica desde que tenía 8 años.</p><br><br><br>
+								</div>
+							</li>
+							<li>
+								<div class="agileits-banner-info">
+									<h6>Apasionado Por</h6>
+									<h3>La Música y la Danza</h3>
+									<p>Siempre buscando distintos formas de entender el mundo.<br>Se apasiona por la Música y el Baile <br> practicando danzas como un pasatiempo. </p><br><br><br>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<script src="js/responsiveslides.min.js"></script>
+					<script>
+					// You can also use "$(window).load(function() {"
+					$(function () {
+						  // Slideshow 4
+						  $("#slider4").responsiveSlides({
+						  	auto: true,
+						  	pager:true,
+						  	nav:true,
+						  	speed: 500,
+						  	namespace: "callbacks",
+						  	before: function () {
+						  		$('.events').append("<li>before event fired.</li>");
+						  	},
+						  	after: function () {
+						  		$('.events').append("<li>after event fired.</li>");
+						  	}
+						  });
+
+						});
+					</script>
+					<!--banner Slider starts Here-->
+				</div>
+			</div>
+		</div>
+		<!--AQUÍ TERMINA LA GALERÍA DE INFORMACIÓN-->
+	</div>
+	<!--AQUÍ TERMINA EN NAVBAR DE LA PÁGINA-->
+
+
+
+	<!-- welcome -->
+	<div class="welcome" id="welcome">
+		<div class="container">
+			<div class="w3l-heading">
+				<h2>Información Personal</h2>
+			</div>
+			<div class="w3-welcome-grids">
+				<div class="row">
+					<div class="col-md-2"></div>
+					<div class="col-md-4">
+						<center><img src="images/david.jpg" width="60%" class="img-circle"></center>
+					</div>
+					<div class="col-md-4">
+						<ul><br><br><br>
+							<li>David Alexander Carrillo Cadena</li>
+							<li>1723592174</li>
+							<li>18 de Agosto del 1996</li>
+							<li>0987422391</li>
+							<li>4505331</li>
+							<li>dcarrilloc@institutobenitojuarez.edu.ec</li>
+						</ul>
+					</div>
+					<div class="col-md-2"></div>
+				</div><br><br><br>
+				<div class="row">
+					<div class="col-md-1"></div>
+					<div class="col-md-5">
+						<center><h2>Aptitudes</h2><br><br><br></center>
+						<ul>
+							<li>Organizado</li>
+							<li>Trabaja muy bien en Equipo</li>
+							<li>Proactivo</li>
+							<li></li>
+						</ul>
+					</div>
+					<div class="col-md-5">
+						<center><h2>Valores y Pricipios</h2><br><br><br></center>
+						<ul>
+							<li>Responsable</li>
+							<li>Honesto</li>
+							<li>Puntual</li>
+							<li>Creativo</li>
+							<li>Comprometido</li>
+						</ul>
+					</div>
+					<div class="col-md-1"></div>
+				</div>
+			</div>
+		</div>
+	</div><br><br>
+	<!-- //welcome -->
+
+	<!--Instrucción-->
+	<div class="instruccion" id="instruccion">
+		<div class="container">
+			<div class="w3l-heading"><br><br><br><br>
+				<h2>Formación Académica</h2>
+			</div>
+			<div class="w3-welcome-grids"><br><br><br><br>
+				<div class="col-md-4">
+					<center>
+						<br><br><br><img src="images/sello.jpg" width="45%" class="img-circle"><br><br>
+						<h4>Unidad Educativa</h4>
+						<h5>"Luis Felipe Boja del Alcázar"</h5>
+						<h6>Bachiller en Servicios y Aplicaciones Informáticas</h6>
+						<p>2001 - 2014</p>
+					</center>
+				</div>
+				<div class="col-md-4">
+					<center>
+						<img src="images/logo_benito.png" width="100%"><br><br><br>
+						<h4>Instituto Tecnológico Superior</h4>
+						<h5>"Benito Juárez"</h5>
+						<h6>Tecnólogo en Desarrollo de Software</h6>
+						<p>2014 - Actulidad</p>
+					</center>
+				</div>
+				<div class="col-md-4">
+					<center>
+						<br><br><br><br><img src="images/cec.png" width="70%"><br><br>
+						<h4>Centro de Educación Continua </h4>
+						<h5>CEC-EPN</h5>
+						<h6>Suficiencia del Indioma Inglés</h6>
+						<p>Enero 2017 - Actualidad</p>
+					</center>
+				</div>
+			</div>
+		</div>
+	</div><br><br><br><br><br><br><br><br><br>
+	<!--Instrucción-->
+
+
+
+
+
+	<!-- services -->
+	<div class="services" id="services">
+		<div class="container">
+			<div class="w3l-heading">
+				<h3>Habilidades</h3>
+			</div>
+			<div class="agileits-services">
+				<div class="services-right-grids">
+					<div class="col-sm-4 services-right-grid">
+						<div class="services-icon hvr-radial-in">
+							<i class="glyphicon glyphicon-floppy-saved" style="font-size: 2em;" aria-hidden="true"></i>
+						</div>
+						<div class="services-icon-info">
+							<h5>Programación</h5>
+							<p>Java <br> C++ <br> PHP </p>
+						</div>
+					</div>
+					<div class="col-sm-4 services-right-grid">
+						<div class="services-icon hvr-radial-in">
+							<i class="glyphicon glyphicon-tasks" style="font-size: 2em;" aria-hidden="true"></i>
+						</div>
+						<div class="services-icon-info">
+							<h5>Gestión de Base de Datos</h5>
+							<p>Manejo y administración de distintas base de datos <br> MySQL <br>PostgrSQL <br>MáríaDB <br> SQLite</p>
+						</div>
+					</div>
+					<div class="col-sm-4 services-right-grid">
+						<div class="services-icon hvr-radial-in">
+							<i class="glyphicon glyphicon-qrcode" style="font-size: 2em;" aria-hidden="true"></i>
+						</div>
+						<div class="services-icon-info">
+							<h5>Sistemas Operativos</h5>
+							<p>Conocimieto de Sistemas Operativos Propietarios y Libres con Manipulación de distintas Distribuciones. <br> Windows <br> Unix y sus Derivados</p>
+						</div>
+					</div>
+					<div class="clearfix"> </div><br><br>
+
+					<div class="col-sm-4 services-right-grid">
+						<div class="services-icon hvr-radial-in">
+							<i class="glyphicon glyphicon-user" style="font-size: 2em;" aria-hidden="true"></i>
+						</div>
+						<div class="services-icon-info">
+							<h5>Comunicación </h5>
+						</div>
+					</div>
+					<div class="col-sm-4 services-right-grid">
+						<div class="services-icon hvr-radial-in">
+							<i class="glyphicon glyphicon-fire" style="font-size: 2em;"  aria-hidden="true"></i>
+						</div>
+						<div class="services-icon-info">
+							<h5>Conocimiento de Software</h5>
+						</div>
+					</div>
+					<div class="col-sm-4 services-right-grid">
+						<div class="services-icon hvr-radial-in">
+							<i class="glyphicon glyphicon-send" style="font-size: 2em;"  aria-hidden="true"></i>
+						</div>
+						<div class="services-icon-info">
+							<h5>Liderazgo</h5>						
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- //services --><br><br><br><br><br><br><br><br><br><br><br>
+		<script src="js/responsiveslides.min.js"></script>
+		<script src="js/SmoothScroll.min.js"></script>
+		<script type="text/javascript" src="js/move-top.js"></script>
+		<script type="text/javascript" src="js/easing.js"></script>
+		<!-- here stars scrolling icon -->
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$().UItoTop({ easingType: 'easeOutQuart' });
+			});
+		</script>
+		<!-- //here ends scrolling icon -->
+		<script src="js/jarallax.js"></script>
+		<script type="text/javascript">
+			/* init Jarallax */
+				$('.jarallax').jarallax({
+						speed: 0.5,
+						imgWidth: 1366,		
+						imgHeight: 768
+						})
+		</script>
+</body>
+<footer>
+	<!-- copyright -->
+	<div class="agileits-w3layouts-copyright">
+		<div class="container">
+			<p style="font-family: Century; font-size: 12px">© 2017 ITSBJ. <i>Instituto Tecnológico Superior Benito Juárez</i> | Design by <a>David Carrillo</a> | 5to Desarrollo de Software </p>
+		</div>
+	</div>
+	<!-- //copyright -->	
+</footer>
+
+
+</html>
